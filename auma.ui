@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1107</width>
+    <height>296</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Hauptmenu</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #7d7d7d, stop: 0.4 #787878,
+                     stop: 0.5 #616161, stop: 1.0 #464646);</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="1" column="1">
+     <layout class="QHBoxLayout" name="horizontalLayout">
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout">
+        <item>
+         <widget class="QPushButton" name="NewTaskButton">
+          <property name="minimumSize">
+           <size>
+            <width>250</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>280</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>VW Head CarUI</family>
+            <pointsize>12</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #c8def3, stop: 0.4 #79aee2,
+                     stop: 0.5 #6fa3d6, stop: 1.0 #6798c7);
+color:rgb(0, 0, 0);
+border-style:outset;
+}
+QPushButton:hover{
+background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #6798c7, stop: 0.4 #6fa3d6,
+                     stop: 0.5 #79aee2, stop: 1.0 #c8def3);
+border-style:outset;
+border-width:3px;
+border-color:rgb(46, 87, 143);
+}
+QPushButton:pressed{
+background-color: rgb(200, 222, 243);
+border-style:inset;
+}
+</string>
+          </property>
+          <property name="text">
+           <string>Neuer Auftrag</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="AuftragAnz">
+          <property name="minimumSize">
+           <size>
+            <width>250</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>280</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>VW Head CarUI</family>
+            <pointsize>12</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #c8def3, stop: 0.4 #79aee2,
+                     stop: 0.5 #6fa3d6, stop: 1.0 #6798c7);
+color:rgb(0, 0, 0);
+border-style:outset;
+}
+QPushButton:hover{
+background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #6798c7, stop: 0.4 #6fa3d6,
+                     stop: 0.5 #79aee2, stop: 1.0 #c8def3);
+border-style:outset;
+border-width:3px;
+border-color:rgb(46, 87, 143);
+}
+QPushButton:pressed{
+background-color: rgb(200, 222, 243);
+border-style:inset;
+}
+</string>
+          </property>
+          <property name="text">
+           <string>Aufträge anzeigen</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="infoChef">
+          <property name="minimumSize">
+           <size>
+            <width>250</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>280</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>VW Head CarUI</family>
+            <pointsize>12</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #c8def3, stop: 0.4 #79aee2,
+                     stop: 0.5 #6fa3d6, stop: 1.0 #6798c7);
+color:rgb(0, 0, 0);
+border-style:outset;
+}
+QPushButton:hover{
+background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #6798c7, stop: 0.4 #6fa3d6,
+                     stop: 0.5 #79aee2, stop: 1.0 #c8def3);
+border-style:outset;
+border-width:3px;
+border-color:rgb(46, 87, 143);
+}
+QPushButton:pressed{
+background-color: rgb(200, 222, 243);
+border-style:inset;
+}
+</string>
+          </property>
+          <property name="text">
+           <string>Info für Chef</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacer_2">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <item>
+         <widget class="QPushButton" name="telefonbuch_but">
+          <property name="minimumSize">
+           <size>
+            <width>250</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>280</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>VW Head CarUI</family>
+            <pointsize>12</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #c8def3, stop: 0.4 #79aee2,
+                     stop: 0.5 #6fa3d6, stop: 1.0 #6798c7);
+color:rgb(0, 0, 0);
+border-style:outset;
+}
+QPushButton:hover{
+background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #6798c7, stop: 0.4 #6fa3d6,
+                     stop: 0.5 #79aee2, stop: 1.0 #c8def3);
+border-style:outset;
+border-width:3px;
+border-color:rgb(46, 87, 143);
+}
+QPushButton:pressed{
+background-color: rgb(200, 222, 243);
+border-style:inset;
+}
+</string>
+          </property>
+          <property name="text">
+           <string>Telefonbuch</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="materialmana">
+          <property name="minimumSize">
+           <size>
+            <width>250</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>280</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>VW Head CarUI</family>
+            <pointsize>12</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #c8def3, stop: 0.4 #79aee2,
+                     stop: 0.5 #6fa3d6, stop: 1.0 #6798c7);
+color:rgb(0, 0, 0);
+border-style:outset;
+}
+QPushButton:hover{
+background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #6798c7, stop: 0.4 #6fa3d6,
+                     stop: 0.5 #79aee2, stop: 1.0 #c8def3);
+border-style:outset;
+border-width:3px;
+border-color:rgb(46, 87, 143);
+}
+QPushButton:pressed{
+background-color: rgb(200, 222, 243);
+border-style:inset;
+}
+</string>
+          </property>
+          <property name="text">
+           <string>Materialmanagement</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="StatsButton">
+          <property name="minimumSize">
+           <size>
+            <width>250</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>280</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>VW Head CarUI</family>
+            <pointsize>12</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #c8def3, stop: 0.4 #79aee2,
+                     stop: 0.5 #6fa3d6, stop: 1.0 #6798c7);
+color:rgb(0, 0, 0);
+border-style:outset;
+}
+QPushButton:hover{
+background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #6798c7, stop: 0.4 #6fa3d6,
+                     stop: 0.5 #79aee2, stop: 1.0 #c8def3);
+border-style:outset;
+border-width:3px;
+border-color:rgb(46, 87, 143);
+}
+QPushButton:pressed{
+background-color: rgb(200, 222, 243);
+border-style:inset;
+}
+</string>
+          </property>
+          <property name="text">
+           <string>Hilfsfunktionen anzeigen</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <spacer name="verticalSpacer">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+       </layout>
+      </item>
+      <item>
+       <spacer name="horizontalSpacer">
+        <property name="orientation">
+         <enum>Qt::Horizontal</enum>
+        </property>
+        <property name="sizeType">
+         <enum>QSizePolicy::Expanding</enum>
+        </property>
+        <property name="sizeHint" stdset="0">
+         <size>
+          <width>40</width>
+          <height>20</height>
+         </size>
+        </property>
+       </spacer>
+      </item>
+      <item>
+       <layout class="QVBoxLayout" name="verticalLayout_3">
+        <item>
+         <spacer name="verticalSpacer_3">
+          <property name="orientation">
+           <enum>Qt::Vertical</enum>
+          </property>
+          <property name="sizeHint" stdset="0">
+           <size>
+            <width>20</width>
+            <height>40</height>
+           </size>
+          </property>
+         </spacer>
+        </item>
+        <item>
+         <widget class="QPushButton" name="beendenBut">
+          <property name="minimumSize">
+           <size>
+            <width>250</width>
+            <height>40</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>280</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <property name="font">
+           <font>
+            <family>VW Head CarUI</family>
+            <pointsize>12</pointsize>
+            <weight>75</weight>
+            <bold>true</bold>
+           </font>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">QPushButton{
+background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #c8def3, stop: 0.4 #79aee2,
+                     stop: 0.5 #6fa3d6, stop: 1.0 #6798c7);
+color:rgb(0, 0, 0);
+border-style:outset;
+}
+QPushButton:hover{
+background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #6798c7, stop: 0.4 #6fa3d6,
+                     stop: 0.5 #79aee2, stop: 1.0 #c8def3);
+border-style:outset;
+border-width:3px;
+border-color:rgb(46, 87, 143);
+}
+QPushButton:pressed{
+background-color: rgb(200, 222, 243);
+border-style:inset;
+}
+</string>
+          </property>
+          <property name="text">
+           <string>Beenden</string>
+          </property>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </item>
+    <item row="1" column="0">
+     <spacer name="horizontalSpacer_2">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeType">
+       <enum>QSizePolicy::Fixed</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>10</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="0" column="1">
+     <spacer name="verticalSpacer_4">
+      <property name="orientation">
+       <enum>Qt::Vertical</enum>
+      </property>
+      <property name="sizeType">
+       <enum>QSizePolicy::Fixed</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>20</width>
+        <height>10</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+    <item row="1" column="2">
+     <spacer name="horizontalSpacer_3">
+      <property name="orientation">
+       <enum>Qt::Horizontal</enum>
+      </property>
+      <property name="sizeType">
+       <enum>QSizePolicy::Fixed</enum>
+      </property>
+      <property name="sizeHint" stdset="0">
+       <size>
+        <width>10</width>
+        <height>20</height>
+       </size>
+      </property>
+     </spacer>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1107</width>
+     <height>21</height>
+    </rect>
+   </property>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

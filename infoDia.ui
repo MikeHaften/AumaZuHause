@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>infoDia</class>
+ <widget class="QDialog" name="infoDia">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>400</width>
+    <height>300</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <widget class="QPushButton" name="backToMainMenu">
+   <property name="geometry">
+    <rect>
+     <x>300</x>
+     <y>250</y>
+     <width>75</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">QPushButton{
+background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #c8def3, stop: 0.4 #79aee2,
+                     stop: 0.5 #6fa3d6, stop: 1.0 #6798c7);
+color:rgb(0, 0, 0);
+border-style:outset;
+}
+QPushButton:hover{
+background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #6798c7, stop: 0.4 #6fa3d6,
+                     stop: 0.5 #79aee2, stop: 1.0 #c8def3);
+border-style:outset;
+border-width:3px;
+border-color:rgb(46, 87, 143);
+}
+QPushButton:pressed{
+background-color: rgb(200, 222, 243);
+border-style:inset;
+}
+</string>
+   </property>
+   <property name="text">
+    <string>Zurück</string>
+   </property>
+  </widget>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

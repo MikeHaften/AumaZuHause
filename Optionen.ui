@@ -1,0 +1,3467 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>Dialog</class>
+ <widget class="QDialog" name="Dialog">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1685</width>
+    <height>948</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Optionen</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color:qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #7d7d7d, stop: 0.4 #787878,
+                     stop: 0.5 #616161, stop: 1.0 #464646);</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <item row="5" column="0">
+    <layout class="QHBoxLayout" name="horizontalLayout_2">
+     <item>
+      <spacer name="horizontalSpacer">
+       <property name="orientation">
+        <enum>Qt::Horizontal</enum>
+       </property>
+       <property name="sizeHint" stdset="0">
+        <size>
+         <width>40</width>
+         <height>20</height>
+        </size>
+       </property>
+      </spacer>
+     </item>
+     <item>
+      <widget class="QPushButton" name="backToMainMenu">
+       <property name="minimumSize">
+        <size>
+         <width>150</width>
+         <height>70</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>VW Head CarUI</family>
+         <pointsize>16</pointsize>
+         <weight>75</weight>
+         <italic>false</italic>
+         <bold>true</bold>
+        </font>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #c8def3, stop: 0.4 #79aee2,
+                     stop: 0.5 #6fa3d6, stop: 1.0 #6798c7);
+color:rgb(0, 0, 0);
+border-style:outset;
+}
+QPushButton:hover{
+background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #6798c7, stop: 0.4 #6fa3d6,
+                     stop: 0.5 #79aee2, stop: 1.0 #c8def3);
+border-style:outset;
+border-width:3px;
+border-color:rgb(46, 87, 143);
+}
+QPushButton:pressed{
+background-color: rgb(200, 222, 243);
+border-style:inset;
+}
+</string>
+       </property>
+       <property name="text">
+        <string>Zurück</string>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item row="4" column="0">
+    <widget class="QTabWidget" name="tabWidget">
+     <property name="font">
+      <font>
+       <family>VW Head CarUI</family>
+       <pointsize>12</pointsize>
+       <weight>75</weight>
+       <bold>true</bold>
+      </font>
+     </property>
+     <property name="currentIndex">
+      <number>1</number>
+     </property>
+     <widget class="QWidget" name="tab">
+      <attribute name="title">
+       <string>Optik</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_6">
+       <item row="3" column="1">
+        <layout class="QHBoxLayout" name="horizontalLayout">
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_2">
+           <property name="sizeConstraint">
+            <enum>QLayout::SetDefaultConstraint</enum>
+           </property>
+          </layout>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_3"/>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_4"/>
+         </item>
+         <item>
+          <layout class="QVBoxLayout" name="verticalLayout_5"/>
+         </item>
+        </layout>
+       </item>
+       <item row="5" column="1">
+        <spacer name="verticalSpacer_7">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="0" column="1">
+        <spacer name="verticalSpacer_6">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="3" column="0">
+        <spacer name="horizontalSpacer_13">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="1" column="1">
+        <widget class="QPushButton" name="colorchange">
+         <property name="minimumSize">
+          <size>
+           <width>80</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>VW Head CarUI</family>
+           <pointsize>16</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #c8def3, stop: 0.4 #79aee2,
+                     stop: 0.5 #6fa3d6, stop: 1.0 #6798c7);
+color:rgb(0, 0, 0);
+border-style:outset;
+}
+QPushButton:hover{
+background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #6798c7, stop: 0.4 #6fa3d6,
+                     stop: 0.5 #79aee2, stop: 1.0 #c8def3);
+border-style:outset;
+border-width:3px;
+border-color:rgb(46, 87, 143);
+}
+QPushButton:pressed{
+background-color: rgb(200, 222, 243);
+border-style:inset;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Farben übernehmen</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="2">
+        <spacer name="horizontalSpacer_14">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="4" column="1">
+        <layout class="QVBoxLayout" name="verticalLayout_6">
+         <item>
+          <layout class="QGridLayout" name="gridLayout_3">
+           <item row="2" column="0">
+            <widget class="QLabel" name="label_8">
+             <property name="styleSheet">
+              <string notr="true">color:rgb(255,255,255)</string>
+             </property>
+             <property name="text">
+              <string>Button</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="6">
+            <widget class="QSpinBox" name="spinBoxL3">
+             <property name="font">
+              <font>
+               <family>VW Head CarUI</family>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color:rgb(255,255,255)</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="2">
+            <widget class="QSpinBox" name="spinBoxU2">
+             <property name="font">
+              <font>
+               <family>VW Head CarUI</family>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color:rgb(255,255,255)</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="6">
+            <widget class="QLabel" name="label_16">
+             <property name="styleSheet">
+              <string notr="true">color:rgb(255,255,255)</string>
+             </property>
+             <property name="text">
+              <string>Label 3</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="15">
+            <widget class="QPushButton" name="pushButton">
+             <property name="font">
+              <font>
+               <family>VW Head CarUI</family>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <italic>false</italic>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #c8def3, stop: 0.4 #79aee2,
+                     stop: 0.5 #6fa3d6, stop: 1.0 #6798c7);
+color:rgb(0, 0, 0);
+border-style:outset;
+}
+QPushButton:hover{
+background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #6798c7, stop: 0.4 #6fa3d6,
+                     stop: 0.5 #79aee2, stop: 1.0 #c8def3);
+border-style:outset;
+border-width:3px;
+border-color:rgb(46, 87, 143);
+}
+QPushButton:pressed{
+background-color: rgb(200, 222, 243);
+border-style:inset;
+}
+</string>
+             </property>
+             <property name="text">
+              <string>Übernehmen</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="5">
+            <widget class="QLabel" name="label_6">
+             <property name="styleSheet">
+              <string notr="true">color:rgb(255,255,255)</string>
+             </property>
+             <property name="text">
+              <string>Label 2</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="3">
+            <widget class="QLabel" name="label_7">
+             <property name="styleSheet">
+              <string notr="true">color:rgb(255,255,255)</string>
+             </property>
+             <property name="text">
+              <string>Label</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="3">
+            <widget class="QFontComboBox" name="fontComboBox2">
+             <property name="font">
+              <font>
+               <family>VW Head CarUI</family>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color:rgb(255,255,255)</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="2">
+            <widget class="QLabel" name="label_2">
+             <property name="styleSheet">
+              <string notr="true">color:rgb(255,255,255)</string>
+             </property>
+             <property name="text">
+              <string>Überschrift 2</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QSpinBox" name="spinBoxU1">
+             <property name="font">
+              <font>
+               <family>VW Head CarUI</family>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color:rgb(255,255,255)</string>
+             </property>
+             <property name="showGroupSeparator" stdset="0">
+              <bool>false</bool>
+             </property>
+             <property name="value">
+              <number>8</number>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="4">
+            <widget class="QSpinBox" name="spinBoxL1">
+             <property name="font">
+              <font>
+               <family>VW Head CarUI</family>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color:rgb(255,255,255)</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="5">
+            <widget class="QSpinBox" name="spinBoxL2">
+             <property name="font">
+              <font>
+               <family>VW Head CarUI</family>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color:rgb(255,255,255)</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <widget class="QLabel" name="label_5">
+             <property name="styleSheet">
+              <string notr="true">color:rgb(255,255,255)</string>
+             </property>
+             <property name="text">
+              <string>Überschrift</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <widget class="QFontComboBox" name="fontComboBox1">
+             <property name="font">
+              <font>
+               <family>VW Head CarUI</family>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color:rgb(255,255,255)</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="4">
+            <widget class="QLabel" name="label_4">
+             <property name="styleSheet">
+              <string notr="true">color:rgb(255,255,255)</string>
+             </property>
+             <property name="text">
+              <string>Label 1</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QLabel" name="label_3">
+             <property name="styleSheet">
+              <string notr="true">color:rgb(255,255,255)</string>
+             </property>
+             <property name="text">
+              <string>Überschrift 1</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="0">
+            <widget class="QFontComboBox" name="fontComboBox3">
+             <property name="font">
+              <font>
+               <family>VW Head CarUI</family>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color:rgb(255,255,255)</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="1">
+            <widget class="QSpinBox" name="spinBoxB1">
+             <property name="font">
+              <font>
+               <family>VW Head CarUI</family>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color:rgb(255,255,255)</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QLabel" name="label_9">
+             <property name="styleSheet">
+              <string notr="true">color:rgb(255,255,255)</string>
+             </property>
+             <property name="text">
+              <string>Button 1</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="2">
+            <widget class="QLabel" name="label_10">
+             <property name="styleSheet">
+              <string notr="true">color:rgb(255,255,255)</string>
+             </property>
+             <property name="text">
+              <string>Button 2</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="2">
+            <widget class="QSpinBox" name="spinBoxB2">
+             <property name="font">
+              <font>
+               <family>VW Head CarUI</family>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color:rgb(255,255,255)</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="3">
+            <widget class="QSpinBox" name="spinBoxB3">
+             <property name="font">
+              <font>
+               <family>VW Head CarUI</family>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color:rgb(255,255,255)</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="3">
+            <widget class="QLabel" name="label_17">
+             <property name="styleSheet">
+              <string notr="true">color:rgb(255,255,255)</string>
+             </property>
+             <property name="text">
+              <string>Button 3</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="4">
+            <widget class="QFontComboBox" name="fontComboBox4">
+             <property name="font">
+              <font>
+               <family>VW Head CarUI</family>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color:rgb(255,255,255)</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="4">
+            <widget class="QLabel" name="label_11">
+             <property name="styleSheet">
+              <string notr="true">color:rgb(255,255,255)</string>
+             </property>
+             <property name="text">
+              <string>Text</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="5">
+            <widget class="QLabel" name="label_12">
+             <property name="styleSheet">
+              <string notr="true">color:rgb(255,255,255)</string>
+             </property>
+             <property name="text">
+              <string>Text 1</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="5">
+            <widget class="QSpinBox" name="spinBoxT1">
+             <property name="font">
+              <font>
+               <family>VW Head CarUI</family>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color:rgb(255,255,255)</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="6">
+            <widget class="QSpinBox" name="spinBoxT2">
+             <property name="font">
+              <font>
+               <family>VW Head CarUI</family>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color:rgb(255,255,255)</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="6">
+            <widget class="QLabel" name="label_13">
+             <property name="styleSheet">
+              <string notr="true">color:rgb(255,255,255)</string>
+             </property>
+             <property name="text">
+              <string>Text 2</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="7">
+            <widget class="QLabel" name="label_14">
+             <property name="styleSheet">
+              <string notr="true">color:rgb(255,255,255)</string>
+             </property>
+             <property name="text">
+              <string>Text 3</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="7">
+            <widget class="QSpinBox" name="spinBoxT3">
+             <property name="font">
+              <font>
+               <family>VW Head CarUI</family>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">background-color:rgb(255,255,255)</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+       <item row="2" column="1">
+        <spacer name="verticalSpacer_8">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_2">
+      <attribute name="title">
+       <string>Systemvariablen</string>
+      </attribute>
+      <layout class="QVBoxLayout" name="verticalLayout_9">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout">
+         <item>
+          <spacer name="verticalSpacer_3">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Fixed</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <layout class="QGridLayout" name="gridLayout_4">
+           <item row="2" column="3">
+            <widget class="QLineEdit" name="LE_Aufpreisfaktor">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>150</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>150</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>VW Head CarUI</family>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLineEdit{
+background-color:rgb(255, 255, 255);
+border-style:solid;
+border-width:2px;
+border-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #c8def3, stop: 0.4 #8daac4,
+                     stop: 0.5 #5085b5, stop: 1.0 #226eb3);
+}
+QLineEdit:hover{
+background-color:rgb(255, 255, 255);
+border-style:solid;
+border-width:2px;
+border-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #6798c7, stop: 0.4 #6fa3d6,
+                     stop: 0.5 #79aee2, stop: 1.0 #c8def3);
+}</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="1">
+            <widget class="QLabel" name="label">
+             <property name="minimumSize">
+              <size>
+               <width>250</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>250</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>VW Head CarUI</family>
+               <pointsize>16</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color:rgb(255,255,255)</string>
+             </property>
+             <property name="text">
+              <string>Maschinenstunde</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="3">
+            <widget class="QLineEdit" name="LE_Arbeitsstunde">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>150</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>150</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>VW Head CarUI</family>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLineEdit{
+background-color:rgb(255, 255, 255);
+border-style:solid;
+border-width:2px;
+border-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #c8def3, stop: 0.4 #8daac4,
+                     stop: 0.5 #5085b5, stop: 1.0 #226eb3);
+}
+QLineEdit:hover{
+background-color:rgb(255, 255, 255);
+border-style:solid;
+border-width:2px;
+border-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #6798c7, stop: 0.4 #6fa3d6,
+                     stop: 0.5 #79aee2, stop: 1.0 #c8def3);
+}</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="4">
+            <spacer name="horizontalSpacer_4">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="0" column="2">
+            <spacer name="horizontalSpacer_6">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Fixed</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="1" column="2">
+            <spacer name="horizontalSpacer_7">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Fixed</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="0" column="3">
+            <widget class="QLineEdit" name="LE_Maschinenstunde">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Fixed" vsizetype="Fixed">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="minimumSize">
+              <size>
+               <width>150</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>150</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>VW Head CarUI</family>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLineEdit{
+background-color:rgb(255, 255, 255);
+border-style:solid;
+border-width:2px;
+border-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #c8def3, stop: 0.4 #8daac4,
+                     stop: 0.5 #5085b5, stop: 1.0 #226eb3);
+}
+QLineEdit:hover{
+background-color:rgb(255, 255, 255);
+border-style:solid;
+border-width:2px;
+border-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #6798c7, stop: 0.4 #6fa3d6,
+                     stop: 0.5 #79aee2, stop: 1.0 #c8def3);
+}</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="4">
+            <spacer name="horizontalSpacer_5">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="2" column="2">
+            <spacer name="horizontalSpacer_8">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Fixed</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="2" column="1">
+            <widget class="QLabel" name="label_18">
+             <property name="minimumSize">
+              <size>
+               <width>250</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>250</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>VW Head CarUI</family>
+               <pointsize>16</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color:rgb(255,255,255)</string>
+             </property>
+             <property name="text">
+              <string>Aufpreisfaktor</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="4">
+            <spacer name="horizontalSpacer_3">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="1" column="1">
+            <widget class="QLabel" name="label_15">
+             <property name="minimumSize">
+              <size>
+               <width>250</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>250</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>VW Head CarUI</family>
+               <pointsize>16</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color:rgb(255,255,255)</string>
+             </property>
+             <property name="text">
+              <string>Arbeitsstunde</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <spacer name="horizontalSpacer_9">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Fixed</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <spacer name="verticalSpacer_12">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="But_SaveSysVar">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>VW Head CarUI</family>
+             <pointsize>12</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #c8def3, stop: 0.4 #79aee2,
+                     stop: 0.5 #6fa3d6, stop: 1.0 #6798c7);
+color:rgb(0, 0, 0);
+border-style:outset;
+}
+QPushButton:hover{
+background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #6798c7, stop: 0.4 #6fa3d6,
+                     stop: 0.5 #79aee2, stop: 1.0 #c8def3);
+border-style:outset;
+border-width:3px;
+border-color:rgb(46, 87, 143);
+}
+QPushButton:pressed{
+background-color: rgb(200, 222, 243);
+border-style:inset;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>Übernehmen</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="Line" name="line">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QGridLayout" name="gridLayout_12">
+           <item row="0" column="2">
+            <spacer name="horizontalSpacer_34">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Fixed</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="0" column="5">
+            <widget class="QPushButton" name="pushButton_8">
+             <property name="minimumSize">
+              <size>
+               <width>80</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #c8def3, stop: 0.4 #79aee2,
+                     stop: 0.5 #6fa3d6, stop: 1.0 #6798c7);
+color:rgb(0, 0, 0);
+border-style:outset;
+}
+QPushButton:hover{
+background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #6798c7, stop: 0.4 #6fa3d6,
+                     stop: 0.5 #79aee2, stop: 1.0 #c8def3);
+border-style:outset;
+border-width:3px;
+border-color:rgb(46, 87, 143);
+}
+QPushButton:pressed{
+background-color: rgb(200, 222, 243);
+border-style:inset;
+}
+</string>
+             </property>
+             <property name="text">
+              <string>Ändern</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="0">
+            <spacer name="horizontalSpacer_33">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Fixed</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="0" column="3">
+            <widget class="QLineEdit" name="lineEdit_12">
+             <property name="minimumSize">
+              <size>
+               <width>800</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>800</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLineEdit{
+background-color:rgb(255, 255, 255);
+border-style:solid;
+border-width:2px;
+border-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #c8def3, stop: 0.4 #8daac4,
+                     stop: 0.5 #5085b5, stop: 1.0 #226eb3);
+}
+QLineEdit:hover{
+background-color:rgb(255, 255, 255);
+border-style:solid;
+border-width:2px;
+border-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #6798c7, stop: 0.4 #6fa3d6,
+                     stop: 0.5 #79aee2, stop: 1.0 #c8def3);
+}</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="3">
+            <widget class="QLineEdit" name="lineEdit_18">
+             <property name="minimumSize">
+              <size>
+               <width>800</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>800</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLineEdit{
+background-color:rgb(255, 255, 255);
+border-style:solid;
+border-width:2px;
+border-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #c8def3, stop: 0.4 #8daac4,
+                     stop: 0.5 #5085b5, stop: 1.0 #226eb3);
+}
+QLineEdit:hover{
+background-color:rgb(255, 255, 255);
+border-style:solid;
+border-width:2px;
+border-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #6798c7, stop: 0.4 #6fa3d6,
+                     stop: 0.5 #79aee2, stop: 1.0 #c8def3);
+}</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="5">
+            <widget class="QPushButton" name="pushButton_9">
+             <property name="minimumSize">
+              <size>
+               <width>80</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #c8def3, stop: 0.4 #79aee2,
+                     stop: 0.5 #6fa3d6, stop: 1.0 #6798c7);
+color:rgb(0, 0, 0);
+border-style:outset;
+}
+QPushButton:hover{
+background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #6798c7, stop: 0.4 #6fa3d6,
+                     stop: 0.5 #79aee2, stop: 1.0 #c8def3);
+border-style:outset;
+border-width:3px;
+border-color:rgb(46, 87, 143);
+}
+QPushButton:pressed{
+background-color: rgb(200, 222, 243);
+border-style:inset;
+}
+</string>
+             </property>
+             <property name="text">
+              <string>Ändern</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="7">
+            <widget class="QPushButton" name="pushButton_12">
+             <property name="minimumSize">
+              <size>
+               <width>80</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #c8def3, stop: 0.4 #79aee2,
+                     stop: 0.5 #6fa3d6, stop: 1.0 #6798c7);
+color:rgb(0, 0, 0);
+border-style:outset;
+}
+QPushButton:hover{
+background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #6798c7, stop: 0.4 #6fa3d6,
+                     stop: 0.5 #79aee2, stop: 1.0 #c8def3);
+border-style:outset;
+border-width:3px;
+border-color:rgb(46, 87, 143);
+}
+QPushButton:pressed{
+background-color: rgb(200, 222, 243);
+border-style:inset;
+}
+</string>
+             </property>
+             <property name="text">
+              <string>Übernehmen</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QLabel" name="label_41">
+             <property name="minimumSize">
+              <size>
+               <width>250</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>250</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>16</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color:rgb(255,255,255)</string>
+             </property>
+             <property name="text">
+              <string>Auftragsbilder</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="3">
+            <widget class="QLineEdit" name="lineEdit_17">
+             <property name="minimumSize">
+              <size>
+               <width>800</width>
+               <height>30</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>800</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>10</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLineEdit{
+background-color:rgb(255, 255, 255);
+border-style:solid;
+border-width:2px;
+border-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #c8def3, stop: 0.4 #8daac4,
+                     stop: 0.5 #5085b5, stop: 1.0 #226eb3);
+}
+QLineEdit:hover{
+background-color:rgb(255, 255, 255);
+border-style:solid;
+border-width:2px;
+border-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #6798c7, stop: 0.4 #6fa3d6,
+                     stop: 0.5 #79aee2, stop: 1.0 #c8def3);
+}</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="5">
+            <widget class="QPushButton" name="pushButton_10">
+             <property name="minimumSize">
+              <size>
+               <width>80</width>
+               <height>40</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #c8def3, stop: 0.4 #79aee2,
+                     stop: 0.5 #6fa3d6, stop: 1.0 #6798c7);
+color:rgb(0, 0, 0);
+border-style:outset;
+}
+QPushButton:hover{
+background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #6798c7, stop: 0.4 #6fa3d6,
+                     stop: 0.5 #79aee2, stop: 1.0 #c8def3);
+border-style:outset;
+border-width:3px;
+border-color:rgb(46, 87, 143);
+}
+QPushButton:pressed{
+background-color: rgb(200, 222, 243);
+border-style:inset;
+}
+</string>
+             </property>
+             <property name="text">
+              <string>Ändern</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="6">
+            <spacer name="horizontalSpacer_35">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="0" column="1">
+            <widget class="QLabel" name="label_33">
+             <property name="minimumSize">
+              <size>
+               <width>250</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>250</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>16</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color:rgb(255,255,255)</string>
+             </property>
+             <property name="text">
+              <string>Auftragsdaten</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QLabel" name="label_40">
+             <property name="minimumSize">
+              <size>
+               <width>250</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>250</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <pointsize>16</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color:rgb(255,255,255)</string>
+             </property>
+             <property name="text">
+              <string>Auftragsprogramm</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="4">
+            <spacer name="horizontalSpacer_36">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Fixed</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>10</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_8">
+           <item>
+            <spacer name="horizontalSpacer_32">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_39">
+             <property name="font">
+              <font>
+               <family>VW Head CarUI</family>
+               <pointsize>16</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color:rgb(255,255,255)</string>
+             </property>
+             <property name="text">
+              <string>Allgemein FA-Beleg</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_31">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QGridLayout" name="gridLayout_9">
+           <item row="4" column="4">
+            <widget class="QLineEdit" name="lineEdit_14">
+             <property name="minimumSize">
+              <size>
+               <width>150</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>150</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>VW Head CarUI</family>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLineEdit{
+background-color:rgb(255, 255, 255);
+border-style:solid;
+border-width:2px;
+border-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #c8def3, stop: 0.4 #8daac4,
+                     stop: 0.5 #5085b5, stop: 1.0 #226eb3);
+}
+QLineEdit:hover{
+background-color:rgb(255, 255, 255);
+border-style:solid;
+border-width:2px;
+border-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #6798c7, stop: 0.4 #6fa3d6,
+                     stop: 0.5 #79aee2, stop: 1.0 #c8def3);
+}</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <spacer name="horizontalSpacer_20">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Fixed</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="4" column="1">
+            <widget class="QLabel" name="label_34">
+             <property name="minimumSize">
+              <size>
+               <width>250</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>250</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>VW Head CarUI</family>
+               <pointsize>16</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color:rgb(255,255,255)</string>
+             </property>
+             <property name="text">
+              <string>AP</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="3">
+            <spacer name="horizontalSpacer_18">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Fixed</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="2" column="4">
+            <widget class="QLineEdit" name="lineEdit_13">
+             <property name="minimumSize">
+              <size>
+               <width>150</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>150</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>VW Head CarUI</family>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLineEdit{
+background-color:rgb(255, 255, 255);
+border-style:solid;
+border-width:2px;
+border-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #c8def3, stop: 0.4 #8daac4,
+                     stop: 0.5 #5085b5, stop: 1.0 #226eb3);
+}
+QLineEdit:hover{
+background-color:rgb(255, 255, 255);
+border-style:solid;
+border-width:2px;
+border-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #6798c7, stop: 0.4 #6fa3d6,
+                     stop: 0.5 #79aee2, stop: 1.0 #c8def3);
+}</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="1">
+            <widget class="QLabel" name="label_32">
+             <property name="minimumSize">
+              <size>
+               <width>250</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>250</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>VW Head CarUI</family>
+               <pointsize>16</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color:rgb(255,255,255)</string>
+             </property>
+             <property name="text">
+              <string>AFO</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="5">
+            <spacer name="horizontalSpacer_19">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="Line" name="line_3">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_6">
+           <item>
+            <spacer name="horizontalSpacer_21">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_37">
+             <property name="font">
+              <font>
+               <family>VW Head CarUI</family>
+               <pointsize>16</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color:rgb(255,255,255)</string>
+             </property>
+             <property name="text">
+              <string>Prusa MKS3+</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_22">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QGridLayout" name="gridLayout_10">
+           <item row="1" column="2">
+            <spacer name="horizontalSpacer_26">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Fixed</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="1" column="1">
+            <widget class="QLabel" name="label_35">
+             <property name="minimumSize">
+              <size>
+               <width>250</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>250</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>VW Head CarUI</family>
+               <pointsize>16</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color:rgb(255,255,255)</string>
+             </property>
+             <property name="text">
+              <string>APL</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="0">
+            <spacer name="horizontalSpacer_25">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Fixed</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="1" column="3">
+            <widget class="QLineEdit" name="lineEdit_15">
+             <property name="minimumSize">
+              <size>
+               <width>150</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>150</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>VW Head CarUI</family>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLineEdit{
+background-color:rgb(255, 255, 255);
+border-style:solid;
+border-width:2px;
+border-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #c8def3, stop: 0.4 #8daac4,
+                     stop: 0.5 #5085b5, stop: 1.0 #226eb3);
+}
+QLineEdit:hover{
+background-color:rgb(255, 255, 255);
+border-style:solid;
+border-width:2px;
+border-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #6798c7, stop: 0.4 #6fa3d6,
+                     stop: 0.5 #79aee2, stop: 1.0 #c8def3);
+}</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="4">
+            <spacer name="horizontalSpacer_27">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <widget class="Line" name="line_2">
+           <property name="orientation">
+            <enum>Qt::Horizontal</enum>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_7">
+           <item>
+            <spacer name="horizontalSpacer_24">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_38">
+             <property name="font">
+              <font>
+               <family>VW Head CarUI</family>
+               <pointsize>16</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color:rgb(255,255,255)</string>
+             </property>
+             <property name="text">
+              <string>HP</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_23">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QGridLayout" name="gridLayout_11">
+           <item row="0" column="0">
+            <spacer name="horizontalSpacer_28">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Fixed</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="0" column="3">
+            <widget class="QLineEdit" name="lineEdit_16">
+             <property name="minimumSize">
+              <size>
+               <width>150</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>150</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>VW Head CarUI</family>
+               <pointsize>12</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLineEdit{
+background-color:rgb(255, 255, 255);
+border-style:solid;
+border-width:2px;
+border-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #c8def3, stop: 0.4 #8daac4,
+                     stop: 0.5 #5085b5, stop: 1.0 #226eb3);
+}
+QLineEdit:hover{
+background-color:rgb(255, 255, 255);
+border-style:solid;
+border-width:2px;
+border-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #6798c7, stop: 0.4 #6fa3d6,
+                     stop: 0.5 #79aee2, stop: 1.0 #c8def3);
+}</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="2">
+            <spacer name="horizontalSpacer_29">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Fixed</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="0" column="1">
+            <widget class="QLabel" name="label_36">
+             <property name="minimumSize">
+              <size>
+               <width>250</width>
+               <height>0</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>250</width>
+               <height>16777215</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>VW Head CarUI</family>
+               <pointsize>16</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color:rgb(255,255,255)</string>
+             </property>
+             <property name="text">
+              <string>APL</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="4">
+            <spacer name="horizontalSpacer_30">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <spacer name="verticalSpacer_2">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_3">
+           <item>
+            <spacer name="horizontalSpacer_2">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item>
+            <spacer name="horizontalSpacer_10">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Fixed</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>40</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <spacer name="verticalSpacer_4">
+           <property name="orientation">
+            <enum>Qt::Vertical</enum>
+           </property>
+           <property name="sizeType">
+            <enum>QSizePolicy::Fixed</enum>
+           </property>
+           <property name="sizeHint" stdset="0">
+            <size>
+             <width>20</width>
+             <height>40</height>
+            </size>
+           </property>
+          </spacer>
+         </item>
+         <item>
+          <widget class="QPushButton" name="pushButton_7">
+           <property name="minimumSize">
+            <size>
+             <width>0</width>
+             <height>30</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>VW Head CarUI</family>
+             <pointsize>12</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #c8def3, stop: 0.4 #79aee2,
+                     stop: 0.5 #6fa3d6, stop: 1.0 #6798c7);
+color:rgb(0, 0, 0);
+border-style:outset;
+}
+QPushButton:hover{
+background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #6798c7, stop: 0.4 #6fa3d6,
+                     stop: 0.5 #79aee2, stop: 1.0 #c8def3);
+border-style:outset;
+border-width:3px;
+border-color:rgb(46, 87, 143);
+}
+QPushButton:pressed{
+background-color: rgb(200, 222, 243);
+border-style:inset;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>Übernehmen</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_5">
+      <attribute name="title">
+       <string>Lizenz</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_8">
+       <item row="6" column="2">
+        <widget class="QPushButton" name="pushButton_5">
+         <property name="minimumSize">
+          <size>
+           <width>140</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>VW Head CarUI</family>
+           <pointsize>12</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #c8def3, stop: 0.4 #79aee2,
+                     stop: 0.5 #6fa3d6, stop: 1.0 #6798c7);
+color:rgb(0, 0, 0);
+border-style:outset;
+}
+QPushButton:hover{
+background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #6798c7, stop: 0.4 #6fa3d6,
+                     stop: 0.5 #79aee2, stop: 1.0 #c8def3);
+border-style:outset;
+border-width:3px;
+border-color:rgb(46, 87, 143);
+}
+QPushButton:pressed{
+background-color: rgb(200, 222, 243);
+border-style:inset;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Übernehmen</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="2">
+        <widget class="QLabel" name="label_30">
+         <property name="font">
+          <font>
+           <family>VW Head CarUI</family>
+           <pointsize>12</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color:rgb(255,255,255)</string>
+         </property>
+         <property name="text">
+          <string>Datum</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="3">
+        <spacer name="horizontalSpacer_17">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLabel" name="label_29">
+         <property name="font">
+          <font>
+           <family>VW Head CarUI</family>
+           <pointsize>12</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color:rgb(255,255,255)</string>
+         </property>
+         <property name="text">
+          <string>Ablaufdatum</string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLineEdit" name="lineEdit_9">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>VW Head CarUI</family>
+           <pointsize>12</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit{
+background-color:rgb(255, 255, 255);
+border-style:solid;
+border-width:2px;
+border-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #c8def3, stop: 0.4 #8daac4,
+                     stop: 0.5 #5085b5, stop: 1.0 #226eb3);
+}
+QLineEdit:hover{
+background-color:rgb(255, 255, 255);
+border-style:solid;
+border-width:2px;
+border-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #6798c7, stop: 0.4 #6fa3d6,
+                     stop: 0.5 #79aee2, stop: 1.0 #c8def3);
+}</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="0">
+        <widget class="QLabel" name="label_28">
+         <property name="font">
+          <font>
+           <family>VW Head CarUI</family>
+           <pointsize>12</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color:rgb(255,255,255)</string>
+         </property>
+         <property name="text">
+          <string>Neuer Lizenzschlüssel</string>
+         </property>
+        </widget>
+       </item>
+       <item row="3" column="0">
+        <widget class="QLineEdit" name="lineEdit_10">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>40</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>VW Head CarUI</family>
+           <pointsize>12</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit{
+background-color:rgb(255, 255, 255);
+border-style:solid;
+border-width:2px;
+border-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #c8def3, stop: 0.4 #8daac4,
+                     stop: 0.5 #5085b5, stop: 1.0 #226eb3);
+}
+QLineEdit:hover{
+background-color:rgb(255, 255, 255);
+border-style:solid;
+border-width:2px;
+border-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #6798c7, stop: 0.4 #6fa3d6,
+                     stop: 0.5 #79aee2, stop: 1.0 #c8def3);
+}</string>
+         </property>
+        </widget>
+       </item>
+       <item row="4" column="0">
+        <spacer name="verticalSpacer_11">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="label_27">
+         <property name="font">
+          <font>
+           <family>VW Head CarUI</family>
+           <pointsize>12</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color:rgb(255,255,255)</string>
+         </property>
+         <property name="text">
+          <string>Aktueller Lizenzschlüssel</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="0">
+        <widget class="QLabel" name="label_31">
+         <property name="font">
+          <font>
+           <family>VW Head CarUI</family>
+           <pointsize>12</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">color:rgb(255,255,255)</string>
+         </property>
+         <property name="text">
+          <string>Lizenzschlüssel generieren</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="1">
+        <widget class="QLineEdit" name="lineEdit_11">
+         <property name="minimumSize">
+          <size>
+           <width>0</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QLineEdit{
+background-color:rgb(255, 255, 255);
+border-style:solid;
+border-width:2px;
+border-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #c8def3, stop: 0.4 #8daac4,
+                     stop: 0.5 #5085b5, stop: 1.0 #226eb3);
+}
+QLineEdit:hover{
+background-color:rgb(255, 255, 255);
+border-style:solid;
+border-width:2px;
+border-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #6798c7, stop: 0.4 #6fa3d6,
+                     stop: 0.5 #79aee2, stop: 1.0 #c8def3);
+}</string>
+         </property>
+        </widget>
+       </item>
+       <item row="5" column="2">
+        <widget class="QPushButton" name="pushButton_6">
+         <property name="minimumSize">
+          <size>
+           <width>140</width>
+           <height>50</height>
+          </size>
+         </property>
+         <property name="font">
+          <font>
+           <family>VW Head CarUI</family>
+           <pointsize>12</pointsize>
+           <weight>75</weight>
+           <bold>true</bold>
+          </font>
+         </property>
+         <property name="styleSheet">
+          <string notr="true">QPushButton{
+background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #c8def3, stop: 0.4 #79aee2,
+                     stop: 0.5 #6fa3d6, stop: 1.0 #6798c7);
+color:rgb(0, 0, 0);
+border-style:outset;
+}
+QPushButton:hover{
+background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #6798c7, stop: 0.4 #6fa3d6,
+                     stop: 0.5 #79aee2, stop: 1.0 #c8def3);
+border-style:outset;
+border-width:3px;
+border-color:rgb(46, 87, 143);
+}
+QPushButton:pressed{
+background-color: rgb(200, 222, 243);
+border-style:inset;
+}
+</string>
+         </property>
+         <property name="text">
+          <string>Generieren</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_4">
+      <attribute name="title">
+       <string>Materialparameter</string>
+      </attribute>
+      <layout class="QHBoxLayout" name="horizontalLayout_5">
+       <item>
+        <layout class="QVBoxLayout" name="verticalLayout_7">
+         <item>
+          <layout class="QGridLayout" name="gridLayout_7">
+           <item row="2" column="1">
+            <widget class="QLineEdit" name="lineEdit_3">
+             <property name="font">
+              <font>
+               <family>VW Head CarUI</family>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLineEdit{
+background-color:rgb(255, 255, 255);
+border-style:solid;
+border-width:2px;
+border-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #c8def3, stop: 0.4 #8daac4,
+                     stop: 0.5 #5085b5, stop: 1.0 #226eb3);
+}
+QLineEdit:hover{
+background-color:rgb(255, 255, 255);
+border-style:solid;
+border-width:2px;
+border-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #6798c7, stop: 0.4 #6fa3d6,
+                     stop: 0.5 #79aee2, stop: 1.0 #c8def3);
+}</string>
+             </property>
+            </widget>
+           </item>
+           <item row="6" column="1">
+            <widget class="QLineEdit" name="lineEdit_6">
+             <property name="font">
+              <font>
+               <family>VW Head CarUI</family>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLineEdit{
+background-color:rgb(255, 255, 255);
+border-style:solid;
+border-width:2px;
+border-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #c8def3, stop: 0.4 #8daac4,
+                     stop: 0.5 #5085b5, stop: 1.0 #226eb3);
+}
+QLineEdit:hover{
+background-color:rgb(255, 255, 255);
+border-style:solid;
+border-width:2px;
+border-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #6798c7, stop: 0.4 #6fa3d6,
+                     stop: 0.5 #79aee2, stop: 1.0 #c8def3);
+}</string>
+             </property>
+            </widget>
+           </item>
+           <item row="1" column="1">
+            <widget class="QLabel" name="label_21">
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color:rgb(255,255,255)</string>
+             </property>
+             <property name="text">
+              <string>ID</string>
+             </property>
+            </widget>
+           </item>
+           <item row="0" column="2">
+            <spacer name="verticalSpacer_10">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Fixed</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="2" column="2">
+            <widget class="QLineEdit" name="lineEdit">
+             <property name="font">
+              <font>
+               <family>VW Head CarUI</family>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLineEdit{
+background-color:rgb(255, 255, 255);
+border-style:solid;
+border-width:2px;
+border-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #c8def3, stop: 0.4 #8daac4,
+                     stop: 0.5 #5085b5, stop: 1.0 #226eb3);
+}
+QLineEdit:hover{
+background-color:rgb(255, 255, 255);
+border-style:solid;
+border-width:2px;
+border-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #6798c7, stop: 0.4 #6fa3d6,
+                     stop: 0.5 #79aee2, stop: 1.0 #c8def3);
+}</string>
+             </property>
+            </widget>
+           </item>
+           <item row="7" column="2">
+            <spacer name="verticalSpacer_9">
+             <property name="orientation">
+              <enum>Qt::Vertical</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>40</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="1" column="2">
+            <widget class="QLabel" name="label_19">
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color:rgb(255,255,255)</string>
+             </property>
+             <property name="text">
+              <string>Materialart</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="7">
+            <spacer name="horizontalSpacer_15">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Fixed</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="1" column="6">
+            <widget class="QLabel" name="label_20">
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color:rgb(255,255,255)</string>
+             </property>
+             <property name="text">
+              <string>Durchmesser</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="6">
+            <widget class="QLineEdit" name="lineEdit_2">
+             <property name="font">
+              <font>
+               <family>VW Head CarUI</family>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLineEdit{
+background-color:rgb(255, 255, 255);
+border-style:solid;
+border-width:2px;
+border-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #c8def3, stop: 0.4 #8daac4,
+                     stop: 0.5 #5085b5, stop: 1.0 #226eb3);
+}
+QLineEdit:hover{
+background-color:rgb(255, 255, 255);
+border-style:solid;
+border-width:2px;
+border-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #6798c7, stop: 0.4 #6fa3d6,
+                     stop: 0.5 #79aee2, stop: 1.0 #c8def3);
+}</string>
+             </property>
+            </widget>
+           </item>
+           <item row="2" column="0">
+            <spacer name="horizontalSpacer_16">
+             <property name="orientation">
+              <enum>Qt::Horizontal</enum>
+             </property>
+             <property name="sizeType">
+              <enum>QSizePolicy::Fixed</enum>
+             </property>
+             <property name="sizeHint" stdset="0">
+              <size>
+               <width>20</width>
+               <height>20</height>
+              </size>
+             </property>
+            </spacer>
+           </item>
+           <item row="4" column="2">
+            <widget class="QLineEdit" name="lineEdit_5">
+             <property name="font">
+              <font>
+               <family>VW Head CarUI</family>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLineEdit{
+background-color:rgb(255, 255, 255);
+border-style:solid;
+border-width:2px;
+border-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #c8def3, stop: 0.4 #8daac4,
+                     stop: 0.5 #5085b5, stop: 1.0 #226eb3);
+}
+QLineEdit:hover{
+background-color:rgb(255, 255, 255);
+border-style:solid;
+border-width:2px;
+border-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #6798c7, stop: 0.4 #6fa3d6,
+                     stop: 0.5 #79aee2, stop: 1.0 #c8def3);
+}</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="2">
+            <widget class="QLabel" name="label_23">
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color:rgb(255,255,255)</string>
+             </property>
+             <property name="text">
+              <string>Preis</string>
+             </property>
+            </widget>
+           </item>
+           <item row="4" column="1">
+            <widget class="QLineEdit" name="lineEdit_4">
+             <property name="font">
+              <font>
+               <family>VW Head CarUI</family>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLineEdit{
+background-color:rgb(255, 255, 255);
+border-style:solid;
+border-width:2px;
+border-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #c8def3, stop: 0.4 #8daac4,
+                     stop: 0.5 #5085b5, stop: 1.0 #226eb3);
+}
+QLineEdit:hover{
+background-color:rgb(255, 255, 255);
+border-style:solid;
+border-width:2px;
+border-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #6798c7, stop: 0.4 #6fa3d6,
+                     stop: 0.5 #79aee2, stop: 1.0 #c8def3);
+}</string>
+             </property>
+            </widget>
+           </item>
+           <item row="3" column="1">
+            <widget class="QLabel" name="label_22">
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color:rgb(255,255,255)</string>
+             </property>
+             <property name="text">
+              <string>Gewicht</string>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="1">
+            <widget class="QLabel" name="label_24">
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color:rgb(255,255,255)</string>
+             </property>
+             <property name="text">
+              <string>Var1</string>
+             </property>
+            </widget>
+           </item>
+           <item row="6" column="2">
+            <widget class="QLineEdit" name="lineEdit_7">
+             <property name="font">
+              <font>
+               <family>VW Head CarUI</family>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLineEdit{
+background-color:rgb(255, 255, 255);
+border-style:solid;
+border-width:2px;
+border-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #c8def3, stop: 0.4 #8daac4,
+                     stop: 0.5 #5085b5, stop: 1.0 #226eb3);
+}
+QLineEdit:hover{
+background-color:rgb(255, 255, 255);
+border-style:solid;
+border-width:2px;
+border-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #6798c7, stop: 0.4 #6fa3d6,
+                     stop: 0.5 #79aee2, stop: 1.0 #c8def3);
+}</string>
+             </property>
+            </widget>
+           </item>
+           <item row="6" column="6">
+            <widget class="QLineEdit" name="lineEdit_8">
+             <property name="font">
+              <font>
+               <family>VW Head CarUI</family>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QLineEdit{
+background-color:rgb(255, 255, 255);
+border-style:solid;
+border-width:2px;
+border-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #c8def3, stop: 0.4 #8daac4,
+                     stop: 0.5 #5085b5, stop: 1.0 #226eb3);
+}
+QLineEdit:hover{
+background-color:rgb(255, 255, 255);
+border-style:solid;
+border-width:2px;
+border-color: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #6798c7, stop: 0.4 #6fa3d6,
+                     stop: 0.5 #79aee2, stop: 1.0 #c8def3);
+}</string>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="2">
+            <widget class="QLabel" name="label_25">
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color:rgb(255,255,255)</string>
+             </property>
+             <property name="text">
+              <string>Var2</string>
+             </property>
+            </widget>
+           </item>
+           <item row="5" column="6">
+            <widget class="QLabel" name="label_26">
+             <property name="font">
+              <font>
+               <pointsize>12</pointsize>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color:rgb(255,255,255)</string>
+             </property>
+             <property name="text">
+              <string>Var3</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+         <item>
+          <layout class="QHBoxLayout" name="horizontalLayout_4">
+           <item>
+            <widget class="QPushButton" name="pushButton_4">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>80</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>VW Head CarUI</family>
+               <pointsize>16</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #c8def3, stop: 0.4 #79aee2,
+                     stop: 0.5 #6fa3d6, stop: 1.0 #6798c7);
+color:rgb(0, 0, 0);
+border-style:outset;
+}
+QPushButton:hover{
+background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #6798c7, stop: 0.4 #6fa3d6,
+                     stop: 0.5 #79aee2, stop: 1.0 #c8def3);
+border-style:outset;
+border-width:3px;
+border-color:rgb(46, 87, 143);
+}
+QPushButton:pressed{
+background-color: rgb(200, 222, 243);
+border-style:inset;
+}
+</string>
+             </property>
+             <property name="text">
+              <string>Hinzufügen</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_3">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>80</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>VW Head CarUI</family>
+               <pointsize>16</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #c8def3, stop: 0.4 #79aee2,
+                     stop: 0.5 #6fa3d6, stop: 1.0 #6798c7);
+color:rgb(0, 0, 0);
+border-style:outset;
+}
+QPushButton:hover{
+background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #6798c7, stop: 0.4 #6fa3d6,
+                     stop: 0.5 #79aee2, stop: 1.0 #c8def3);
+border-style:outset;
+border-width:3px;
+border-color:rgb(46, 87, 143);
+}
+QPushButton:pressed{
+background-color: rgb(200, 222, 243);
+border-style:inset;
+}
+</string>
+             </property>
+             <property name="text">
+              <string>Ändern</string>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="pushButton_2">
+             <property name="minimumSize">
+              <size>
+               <width>0</width>
+               <height>80</height>
+              </size>
+             </property>
+             <property name="font">
+              <font>
+               <family>VW Head CarUI</family>
+               <pointsize>16</pointsize>
+               <weight>75</weight>
+               <bold>true</bold>
+              </font>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #c8def3, stop: 0.4 #79aee2,
+                     stop: 0.5 #6fa3d6, stop: 1.0 #6798c7);
+color:rgb(0, 0, 0);
+border-style:outset;
+}
+QPushButton:hover{
+background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #6798c7, stop: 0.4 #6fa3d6,
+                     stop: 0.5 #79aee2, stop: 1.0 #c8def3);
+border-style:outset;
+border-width:3px;
+border-color:rgb(46, 87, 143);
+}
+QPushButton:pressed{
+background-color: rgb(200, 222, 243);
+border-style:inset;
+}
+</string>
+             </property>
+             <property name="text">
+              <string>Löschen</string>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </item>
+       <item>
+        <widget class="QTableWidget" name="tableWidget">
+         <property name="styleSheet">
+          <string notr="true">background-color:rgb(255,255,255)</string>
+         </property>
+         <property name="columnCount">
+          <number>16</number>
+         </property>
+         <column>
+          <property name="text">
+           <string>ID</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Art</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>D</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Gewicht</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Preis</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Var1</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Var2</string>
+          </property>
+         </column>
+         <column>
+          <property name="text">
+           <string>Var3</string>
+          </property>
+         </column>
+         <column/>
+         <column/>
+         <column/>
+         <column/>
+         <column/>
+         <column/>
+         <column/>
+         <column/>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+     <widget class="QWidget" name="tab_3">
+      <attribute name="title">
+       <string>Zusatzfunktionen</string>
+      </attribute>
+      <layout class="QGridLayout" name="gridLayout_5">
+       <item row="0" column="1">
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="1" column="1">
+        <layout class="QGridLayout" name="gridLayout_2">
+         <item row="0" column="2">
+          <widget class="QPushButton" name="findButton">
+           <property name="minimumSize">
+            <size>
+             <width>80</width>
+             <height>70</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>VW Head CarUI</family>
+             <pointsize>12</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #c8def3, stop: 0.4 #79aee2,
+                     stop: 0.5 #6fa3d6, stop: 1.0 #6798c7);
+color:rgb(0, 0, 0);
+border-style:outset;
+}
+QPushButton:hover{
+background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #6798c7, stop: 0.4 #6fa3d6,
+                     stop: 0.5 #79aee2, stop: 1.0 #c8def3);
+border-style:outset;
+border-width:3px;
+border-color:rgb(46, 87, 143);
+}
+QPushButton:pressed{
+background-color: rgb(200, 222, 243);
+border-style:inset;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>Personen aus Auftragsdatenbank in
+ Personendatenbank überführen</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="0">
+          <widget class="QPushButton" name="connectButton">
+           <property name="minimumSize">
+            <size>
+             <width>80</width>
+             <height>70</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>VW Head CarUI</family>
+             <pointsize>12</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #c8def3, stop: 0.4 #79aee2,
+                     stop: 0.5 #6fa3d6, stop: 1.0 #6798c7);
+color:rgb(0, 0, 0);
+border-style:outset;
+}
+QPushButton:hover{
+background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #6798c7, stop: 0.4 #6fa3d6,
+                     stop: 0.5 #79aee2, stop: 1.0 #c8def3);
+border-style:outset;
+border-width:3px;
+border-color:rgb(46, 87, 143);
+}
+QPushButton:pressed{
+background-color: rgb(200, 222, 243);
+border-style:inset;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>Connect to Database</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="0">
+          <widget class="QPushButton" name="emailButton">
+           <property name="minimumSize">
+            <size>
+             <width>80</width>
+             <height>70</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>VW Head CarUI</family>
+             <pointsize>12</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #c8def3, stop: 0.4 #79aee2,
+                     stop: 0.5 #6fa3d6, stop: 1.0 #6798c7);
+color:rgb(0, 0, 0);
+border-style:outset;
+}
+QPushButton:hover{
+background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #6798c7, stop: 0.4 #6fa3d6,
+                     stop: 0.5 #79aee2, stop: 1.0 #c8def3);
+border-style:outset;
+border-width:3px;
+border-color:rgb(46, 87, 143);
+}
+QPushButton:pressed{
+background-color: rgb(200, 222, 243);
+border-style:inset;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>E-Mail testen</string>
+           </property>
+          </widget>
+         </item>
+         <item row="2" column="2">
+          <widget class="QPushButton" name="closeConButton">
+           <property name="minimumSize">
+            <size>
+             <width>80</width>
+             <height>70</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>VW Head CarUI</family>
+             <pointsize>12</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #c8def3, stop: 0.4 #79aee2,
+                     stop: 0.5 #6fa3d6, stop: 1.0 #6798c7);
+color:rgb(0, 0, 0);
+border-style:outset;
+}
+QPushButton:hover{
+background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #6798c7, stop: 0.4 #6fa3d6,
+                     stop: 0.5 #79aee2, stop: 1.0 #c8def3);
+border-style:outset;
+border-width:3px;
+border-color:rgb(46, 87, 143);
+}
+QPushButton:pressed{
+background-color: rgb(200, 222, 243);
+border-style:inset;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>Close Connection</string>
+           </property>
+          </widget>
+         </item>
+         <item row="0" column="0">
+          <widget class="QPushButton" name="openButton">
+           <property name="minimumSize">
+            <size>
+             <width>80</width>
+             <height>70</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>VW Head CarUI</family>
+             <pointsize>12</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="focusPolicy">
+            <enum>Qt::WheelFocus</enum>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #c8def3, stop: 0.4 #79aee2,
+                     stop: 0.5 #6fa3d6, stop: 1.0 #6798c7);
+color:rgb(0, 0, 0);
+border-style:outset;
+}
+QPushButton:hover{
+background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #6798c7, stop: 0.4 #6fa3d6,
+                     stop: 0.5 #79aee2, stop: 1.0 #c8def3);
+border-style:outset;
+border-width:3px;
+border-color:rgb(46, 87, 143);
+}
+QPushButton:pressed{
+background-color: rgb(200, 222, 243);
+border-style:inset;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>Daten aus Michaels 
+Auftragsprogramm(Excel) 
+überführen</string>
+           </property>
+          </widget>
+         </item>
+         <item row="1" column="2">
+          <widget class="QPushButton" name="LoadButton">
+           <property name="minimumSize">
+            <size>
+             <width>80</width>
+             <height>70</height>
+            </size>
+           </property>
+           <property name="font">
+            <font>
+             <family>VW Head CarUI</family>
+             <pointsize>12</pointsize>
+             <weight>75</weight>
+             <bold>true</bold>
+            </font>
+           </property>
+           <property name="styleSheet">
+            <string notr="true">QPushButton{
+background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #c8def3, stop: 0.4 #79aee2,
+                     stop: 0.5 #6fa3d6, stop: 1.0 #6798c7);
+color:rgb(0, 0, 0);
+border-style:outset;
+}
+QPushButton:hover{
+background: qlineargradient(x1: 0, y1: 0, x2: 0, y2: 1,
+                     stop: 0 #6798c7, stop: 0.4 #6fa3d6,
+                     stop: 0.5 #79aee2, stop: 1.0 #c8def3);
+border-style:outset;
+border-width:3px;
+border-color:rgb(46, 87, 143);
+}
+QPushButton:pressed{
+background-color: rgb(200, 222, 243);
+border-style:inset;
+}
+</string>
+           </property>
+           <property name="text">
+            <string>Auftrags hilfsfunktion über 
+die Ordner(veraltet)</string>
+           </property>
+          </widget>
+         </item>
+        </layout>
+       </item>
+       <item row="2" column="1">
+        <spacer name="verticalSpacer_5">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="0" column="0">
+        <spacer name="horizontalSpacer_11">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+       <item row="1" column="2">
+        <spacer name="horizontalSpacer_12">
+         <property name="orientation">
+          <enum>Qt::Horizontal</enum>
+         </property>
+         <property name="sizeType">
+          <enum>QSizePolicy::Fixed</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>40</width>
+           <height>20</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
